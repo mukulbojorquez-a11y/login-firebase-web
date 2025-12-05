@@ -1,22 +1,20 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #071021; /* Fondo principal */
+  background: #071021;
   padding: 40px;
-  color: white; /* Texto claro para mayor contraste */
+  color: white;
 }
 
-/* Caja del formulario */
 form {
   margin: 20px auto;
   width: 320px;
   padding: 25px;
-  background: #0d1828; /* Un tono un poco más claro para contraste */
+  background: #0d1828;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Inputs */
 input {
   width: 90%;
   padding: 12px;
@@ -31,7 +29,6 @@ input::placeholder {
   color: #8191a8;
 }
 
-/* Botón */
 button {
   width: 95%;
   padding: 12px;
@@ -49,9 +46,9 @@ button:hover {
   background: #0d56a3;
 }
 
-/* Video */
 video {
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
+
