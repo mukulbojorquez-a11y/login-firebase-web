@@ -1,4 +1,3 @@
-// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBjx_8DrjplXdnngg6H8yV5rhDdk0UNMMQ",
   authDomain: "login-web-896cb.firebaseapp.com",
@@ -9,11 +8,9 @@ const firebaseConfig = {
   measurementId: "G-TTRM60X141"
 };
 
-// Inicializar Firebase solo una vez
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
-// Evento del formulario de login
 const form = document.getElementById("loginForm");
 if (form) {
   form.addEventListener("submit", (e) => {
@@ -47,4 +44,5 @@ if (form) {
       });
   });
 }
+
 
