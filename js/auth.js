@@ -1,4 +1,3 @@
-// Usamos la misma config
 const firebaseConfig = {
   apiKey: "AIzaSyBjx_8DrjplXdnngg6H8yV5rhDdk0UNMMQ",
   authDomain: "login-web-896cb.firebaseapp.com",
@@ -12,16 +11,15 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 
-// Verificar si el usuario está logueado
 auth.onAuthStateChanged(user => {
   if (!user) {
     window.location.href = "index.html";
   }
 });
 
-// Cerrar sesión
 document.getElementById("cerrar").addEventListener("click", () => {
   auth.signOut().then(() => {
     window.location.href = "index.html";
   });
 });
+
